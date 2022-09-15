@@ -16,7 +16,7 @@ Das beiliegende Files data.sql erzeugt Testdaten fur¨ eine Datenbank. Regeln:
 - Die ids sind autogeneriert
 - firstName und lastName durfen¨ nicht leer sein
 - Das date einer Donation darf nicht in der Zukunft liegen und es mussen¨ mindestens 5 Geldeinheiten gespendet werden
-- Allf¨allige Fehler sindub¨ er einen zentralen Exceptionhandler zu behandeln Implementiere einen RESTful Webservice mit
+- Allfällige Fehler sind über einen zentralen Exceptionhandler zu behandeln Implementiere einen RESTful Webservice mit
   folgenden Endpoints:
 
 
