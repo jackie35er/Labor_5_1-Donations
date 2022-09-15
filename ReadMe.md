@@ -7,15 +7,15 @@ Angabe:
 [Copyright HTL St.Pölten Informatik](https://www.htlstp.ac.at/abteilungen/informatik)  
 ![](readmefiles/Aspose.Words.cfcda2db-4015-4a51-a580-c8f6a3d9ef5c.001.png) REST Donations![]
 
-Erzeuge eine Struktur gem¨aß folgendem ER-Diagram:
+Erzeuge eine Struktur gemäß folgendem ER-Diagram:
 
 ![](readmefiles/Aspose.Words.cfcda2db-4015-4a51-a580-c8f6a3d9ef5c.003.jpeg)
 
-Das beiliegende Files data.sql erzeugt Testdaten fur¨ eine Datenbank. Regeln:
+Das beiliegende Files data.sql erzeugt Testdaten für eine Datenbank. Regeln:
 
 - Die ids sind autogeneriert
-- firstName und lastName durfen¨ nicht leer sein
-- Das date einer Donation darf nicht in der Zukunft liegen und es mussen¨ mindestens 5 Geldeinheiten gespendet werden
+- firstName und lastName dürfen nicht leer sein
+- Das date einer Donation darf nicht in der Zukunft liegen und es müssen mindestens 5 Geldeinheiten gespendet werden
 - Allfällige Fehler sind über einen zentralen Exceptionhandler zu behandeln Implementiere einen RESTful Webservice mit
   folgenden Endpoints:
 
