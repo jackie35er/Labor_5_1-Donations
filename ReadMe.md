@@ -2,8 +2,13 @@
 
 Programmieren 5.Klasse  
 Labor übung 1
-
-Angabe:      
+##Important
+Falls das Projekt beim ersten Starten nicht läuft, empfiehlt sich ein:
+- mvn clean
+- mvn install  
+Danach sollte es ohne Probleme laufen.
+Wenn Intellij immer noch glaubt `QueryDslEntities` ist voll mit Fehlern -> rechtsklick auf `target/generated-sources` -> `Mark directory as/sources` 
+##Angabe:      
 [Copyright HTL St.Pölten Informatik](https://www.htlstp.ac.at/abteilungen/informatik)  
 ![](readmefiles/Aspose.Words.cfcda2db-4015-4a51-a580-c8f6a3d9ef5c.001.png) REST Donations![]
 
