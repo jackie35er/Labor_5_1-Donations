@@ -9,12 +9,12 @@ data class Person(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int?,
 
-    @NotBlank
-    @Column
+    @get:NotBlank
+    @get:Column
     val firstName: String,
 
-    @NotBlank
-    @Column
+    @get:NotBlank
+    @get:Column
     val lastName: String
 ) {
     override fun equals(other: Any?): Boolean {

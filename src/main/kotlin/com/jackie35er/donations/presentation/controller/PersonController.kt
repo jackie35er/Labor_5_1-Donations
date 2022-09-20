@@ -5,10 +5,8 @@ import com.jackie35er.donations.domain.Donation
 import com.jackie35er.donations.persistence.DonationRepository
 import com.jackie35er.donations.persistence.PersonRepository
 import com.jackie35er.donations.presentation.dto.DonationDto
-import com.jackie35er.donations.presentation.exception.DonationInvalidException
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
-import java.time.LocalDate
 import javax.persistence.EntityNotFoundException
 import javax.validation.Valid
 
@@ -39,10 +37,6 @@ class PersonController(
             amount = newDonation.amount,
             depositDate = newDonation.depositDate
         )
-
-        if (donations.amount < 5 || donations.depositDate.isAfter(LocalDate.now())) {
-            throw DonationInvalidException("Donation invalid")
-        }
 
         donationRepository.save(donations)
     }

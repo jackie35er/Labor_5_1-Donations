@@ -5,9 +5,9 @@ import javax.validation.constraints.Min
 import javax.validation.constraints.PastOrPresent
 
 data class DonationDto(
-    @Min(value = 5)
+    @get:Min(value = 5)
     val amount: Int,
 
-    @PastOrPresent
+    @get:PastOrPresent
     val depositDate: LocalDate
 )

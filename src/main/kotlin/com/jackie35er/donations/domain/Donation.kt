@@ -15,10 +15,10 @@ data class Donation(
     @ManyToOne
     val person: Person,
 
-    @Min(value = 5)
+    @get:Min(value = 5)
     val amount: Int,
 
-    @PastOrPresent
+    @get:PastOrPresent
     val depositDate: LocalDate
 ) {
     override fun equals(other: Any?): Boolean {
