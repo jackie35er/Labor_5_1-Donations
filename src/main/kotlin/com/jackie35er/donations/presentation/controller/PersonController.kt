@@ -1,6 +1,7 @@
 package com.jackie35er.donations.presentation.controller
 
 import com.jackie35er.donations.domain.Donation
+import com.jackie35er.donations.domain.Person
 
 import com.jackie35er.donations.persistence.DonationRepository
 import com.jackie35er.donations.persistence.PersonRepository
@@ -31,14 +32,17 @@ class PersonController(
     fun saveDonation(@PathVariable id: Int, @RequestBody @Valid newDonation: DonationDto) {
         val person = personRepository.findById(id)
             .orElseThrow { EntityNotFoundException("Person not found for id: $id") }
-        val donations = Donation(//make mapper or smth
+
+        donationRepository.save(newDonation.mapToEnity(person))
+    }
+
+    fun DonationDto.mapToEnity(person: Person): Donation {
+        return Donation(
             id = null,
             person = person,
-            amount = newDonation.amount,
-            depositDate = newDonation.depositDate
+            amount = amount,
+            depositDate = depositDate
         )
-
-        donationRepository.save(donations)
     }
 }
 
