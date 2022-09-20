@@ -2,7 +2,7 @@
 
 Programmieren 5.Klasse  
 Labor übung 1
-##Important
+## Important
 Falls das Projekt beim ersten Starten nicht läuft, empfiehlt sich ein:
 
 - mvn clean
